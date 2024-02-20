@@ -3,31 +3,98 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: #fffeff;
+  --dark-blue: #0c1b38;
+  --red: #aa512b;
+  --tan: #c7b29f;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+
+body, html {
+  background-color: var(--tan);
+  margin: 0;
+  font-family: Heavy Man, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+h1, h3, li, p {
+  font-family: Heavy Man;
+  color: var(--dark-blue);
+}
+
+h2 {
+  font-family: Heavy Man;
+  color: var(--dark-blue);
+  font-size: 1.8rem;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--dark-blue);
+  transition: .3s ease-in-out;
+}
+
+.title:hover {
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  font-family: 'Garamond';
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+
+.subtitle {
+  font-family: 'Garamond';
+  color: var(--dark-blue);
+  font-size: 1.6rem;
+}
+
+@font-face {
+  font-family: 'Raincheck';
+  src: url("/TAYRaincheck.otf")format("opentype");
+}
+
+@font-face {
+  font-family: "Heavy Man";
+  src: url("/TAYHeavyMan.otf")format("opentype");
+}
+
+@font-face {
+  font-family: "Dandy";
+  src: url("/TAYDandy.otf")format("opentype");
+}
+
+.link {
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: var(--dark-blue);
+}
+
+.link:hover{
+  color: var(--red);
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.link:active {
+  text-decoration-line: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  to {
+    opacity: 1;
   }
 }
