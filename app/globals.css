@@ -6,7 +6,11 @@
   --background: #fffeff;
   --dark-blue: #0c1b38;
   --red: #aa512b;
+  --bright-red: #d71f27;
   --tan: #c7b29f;
+  --white: #f6eee0;
+  --green: #38432f;
+  --blue: #2158b0;
 }
 
 
@@ -21,6 +25,16 @@ body, html {
 h1, h3, li, p {
   font-family: Heavy Man;
   color: var(--dark-blue);
+}
+
+button {
+  font-family: "Garamond";
+  margin: 10px;
+  transition: .3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 h2 {
@@ -52,12 +66,62 @@ h3 {
   font-size: 2rem;
 }
 
-
 .subtitle {
   font-family: 'Garamond';
   color: var(--dark-blue);
   font-size: 1.6rem;
 }
+
+.gallery-image {
+  transition: .3s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.link {
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: var(--dark-blue);
+}
+
+.link:hover{
+  color: var(--blue);
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.link:active {
+  text-decoration-line: underline;
+}
+
+.RSVP button, label, input {
+  font-family: Heavy Man;
+}
+
+.RSVP {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  background-color: var(--red);
+}
+
+.RSVP input {
+  padding: 1rem;
+}
+
+.RSVP select {
+  padding: 1rem;
+}
+
+.RSVP button {
+  font-size: .8rem;
+  float: center;
+}
+
+/*********** FONTS **************/
 
 @font-face {
   font-family: 'Raincheck';
@@ -74,21 +138,8 @@ h3 {
   src: url("/TAYDandy.otf")format("opentype");
 }
 
-.link {
-  font-size: 1.2rem;
-  margin: 1rem;
-  color: var(--dark-blue);
-}
 
-.link:hover{
-  color: var(--red);
-  text-decoration-line: underline;
-  cursor: pointer;
-}
-
-.link:active {
-  text-decoration-line: underline;
-}
+/********** ANIMATIONS ************/
 
 @keyframes fadeIn {
   from {
