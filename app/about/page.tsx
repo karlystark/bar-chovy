@@ -5,7 +5,6 @@ export default function About() {
 
     return (
         <div className="About mt-12">
-            <button onClick={() => console.log("hit that button!")} className="z-50">click</button>
             <div className="mx-40 my-10 bg-[#fcf1e9] rounded-xl p-8">
             <p>A consistent, monthly (for now) dinner where friends (and friends of friends) can come together to share food, drinks, sweets, and warmth.</p><br></br>
             <p>This is a standing dinner + folks can come as they please. It is also especially for those who have expressed desire to build more regular community connection into their schedules.</p>
