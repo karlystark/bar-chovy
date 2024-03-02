@@ -69,10 +69,10 @@ export default function Gallery() {
                 <button onClick={() => setIsAlbumOpen(false)} className="absolute z-10 rounded-xl self-start px-3 mx-10">
                     <Image src="/back.png" alt="back arrow" className="inline-block" width="60" height="60"/>
                 </button>
-                <p className="bg-[#2158b0] text-[#c7b29f] self-start py-2 px-3 mt-3 inline-block flex justify-center">{selectedAlbum}</p>
+                <p className="bg-[#5d7633] text-[#c7b29f] self-start py-2 px-3 mt-3 inline-block flex justify-center album-title">{selectedAlbum}</p>
                 </>
                 :
-                <p className="bg-[#2158b0] text-[#c7b29f] self-start py-2 px-3 inline-block flex justify-center mt-3">albums</p>
+                <p className="bg-[#5d7633] text-[#c7b29f] self-start py-2 px-3 inline-block flex justify-center mt-3 album-title">albums</p>
             }
 
             <div className="Gallery flex flex-wrap justify-center mt-10">

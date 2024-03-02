@@ -9,8 +9,9 @@
   --bright-red: #d71f27;
   --tan: #c7b29f;
   --white: #f6eee0;
-  --green: #38432f;
-  --blue: #2158b0;
+  --green: #5d7633;
+  --blue: #3f4cec;
+  --orange: #d94100;
 }
 
 
@@ -78,8 +79,20 @@ h3 {
 
 .gallery-image:hover {
   transform: scale(1.02);
+}
+
+.gallery-image a, .gallery-image a > img {
   cursor: pointer;
 }
+
+.gallery-image a > img {
+  transition: .3s ease-in-out;
+}
+
+.gallery-image a:hover {
+  background-color: var(--green);
+}
+
 
 .link {
   font-size: 1.2rem;
@@ -88,7 +101,7 @@ h3 {
 }
 
 .link:hover{
-  color: var(--blue);
+  color: var(--green);
   text-decoration-line: underline;
   cursor: pointer;
 }
@@ -129,6 +142,12 @@ h3 {
   font-size: .8rem;
   float: center;
 }
+
+
+.gallery-image, .RSVP form, .album-title, .About, .Menu{
+  animation: fadeIn 1s ease-in-out;
+}
+
 
 /*********** FONTS **************/
 

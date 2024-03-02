@@ -29,7 +29,7 @@ export default function RSVP() {
         e.preventDefault();
         const formData = { name, friendName, item, date};
         console.log(formData);
-        setSubmitMessage(`Thanks for RSVPing ${name}! See you on ${date}!`);
+        setSubmitMessage(name ? `Thanks for RSVPing ${name}! See you on ${date}!` : '');
         setShowSubmitMessage(true);
         setName("");
         setFriendName("");
@@ -90,7 +90,7 @@ export default function RSVP() {
                         {neededItems.map((item, idx) => <option key={idx} value={item}>{item}</option>)}
                     </select>
                 </div>
-                <button type="submit" className="py-2 px-4 bg-[#2158b0]  text-[#fffeff] float-right rounded">
+                <button type="submit" className="py-3 px-4 bg-[#5d7633]  text-[#fffeff] float-right rounded">
                     See you there!
                 </button>
             </form>
