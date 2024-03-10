@@ -3,7 +3,7 @@
 import { ChangeEvent, useState } from 'react';
 import Image from "next/image";
 
-const neededItems = ["wine", "cider", "baguette", "fruit", "tinned fish"];
+let neededItems = ["wine", "cider", "baguette", "fruit", "tinned fish"];
 const date = "02/02/24";
 
 
@@ -34,8 +34,19 @@ export default function RSVP() {
         setName("");
         setFriendName("");
         setItem("");
-        // Need to implement sending data to db/server
+        updateNeededItems(item);
+        // implement graphQL db to hold rsvps
     };
+
+
+    // edit needed items list depending on rsvp
+    function updateNeededItems(item: string) {
+        if(neededItems.length > 1){
+        neededItems = neededItems.filter((neededItem) => neededItem !== item);
+        } else {
+        neededItems = ["a drink to share"];
+        }
+    }
 
     return (
         <>

@@ -4,24 +4,31 @@ import Image from "next/image";
 export default function About() {
 
     return (
-        <div className="About mt-12">
-            <div className="mx-40 my-10 bg-[#fcf1e9] rounded-xl p-8 text-sm">
-            <p>A consistent, monthly (for now) dinner where friends (and friends of friends) can come together to share food, drinks, sweets, and warmth.</p><br></br>
-            <p>This is a standing dinner + folks can come as they please. It is also especially for those who have expressed desire to build more regular community connection into their schedules.</p>
+        <div className="About mx-auto pt-10 p-20">
+            <div className="flex flex-col">
+                <div className="text-3xl text-center my-10 text-[#0c1b38]">a consistent, monthly dinner party for friends (+ friends of friends).</div>
+                <div className="flex">
+                <div>
+                    <Image src="/346.jpg" alt="duplex and red truck with ivy" height="700" width="800"/>
+                </div>
+                <div className="bg-[#fcf1e9] shadow-lg p-8 m-6 rounded-xl relative">
+                    <div className="flex flex-col">
+                    <h3 className="mb-3">how it works:</h3>
+                    <ul>
+                        <li> - let me cook for you </li>
+                        <li> - bring a friend (or not!) </li>
+                        <li> - choose an item to bring (from rsvp)</li>
+                        <li> - indulge me as I am really extra with this</li>
+                        <li> - meet people and get warm</li>
+                    </ul>
+                    </div>
+                    <Image src="/olives.png" alt="olives icon" height="200" width="200" className=" absolute top-0 right-0 z-50"/>
+                    </div>
+                </div>
+                <div className=" p-8 leading-normal">
+                    <p className="text-lg">This is a standing dinner + folks can come as they please. It is also especially for those who have expressed desire to build more regular community connection into their schedules.</p>
+                </div>
             </div>
-            <div className="flex justify-around items-center">
-            <Image src="/olives.png" alt="olives icon" height="400" width="400" />
-            <div className="flex flex-col bg-[#fcf1e9] shadow-lg p-8 rounded-xl m-10">
-                <h3 className="mb-3">how it works:</h3>
-                <ul>
-                    <li> - let me cook for you </li>
-                    <li> - bring a friend (or not!) </li>
-                    <li> - bring a bottle (or other drink)</li>
-                    <li> - indulge me as I am really extra with this</li>
-                    <li> - meet people and get warm</li>
-                </ul>
-            </div>
-            </div>
-        </div >
+        </div>
     );
 }

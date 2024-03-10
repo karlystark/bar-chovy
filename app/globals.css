@@ -12,7 +12,9 @@
   --green: #5d7633;
   --blue: #3f4cec;
   --orange: #d94100;
+  --tan-light: #cfbdad;
 }
+
 
 
 body, html {
@@ -71,6 +73,11 @@ h3 {
   font-family: 'Garamond';
   color: var(--dark-blue);
   font-size: 1.6rem;
+}
+
+.Gallery {
+  column-count: 3;
+  column-width: 33%;
 }
 
 .gallery-image {
@@ -144,8 +151,16 @@ h3 {
 }
 
 
-.gallery-image, .RSVP form, .album-title, .About, .Menu{
+.gallery-image, .RSVP form, .album-title, .About, .Menu, .nav-header{
   animation: fadeIn 1s ease-in-out;
+}
+
+.image-expand {
+  transition: transform 3s ease-in-out;
+}
+
+.image-expand:hover {
+  transform: scale(1.1);
 }
 
 
