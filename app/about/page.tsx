@@ -8,8 +8,8 @@ export default function About() {
             <div className="flex flex-col">
                 <div className="text-3xl text-center my-10 text-[#0c1b38]">a consistent, monthly dinner party for friends (+ friends of friends).</div>
                 <div className="flex">
-                <div>
-                    <Image src="/346.jpg" alt="duplex and red truck with ivy" height="700" width="800"/>
+                <div className="image-container overflow-hidden rounded-xl">
+                    <Image src="/346.jpg" className="image-expand" alt="duplex and red truck with ivy" height="700" width="800"/>
                 </div>
                 <div className="bg-[#fcf1e9] shadow-lg p-8 m-6 rounded-xl relative">
                     <div className="flex flex-col">

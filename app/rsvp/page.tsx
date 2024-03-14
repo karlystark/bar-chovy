@@ -38,8 +38,6 @@ export default function RSVP() {
         // implement graphQL db to hold rsvps
     };
 
-
-    // edit needed items list depending on rsvp
     function updateNeededItems(item: string) {
         if(neededItems.length > 1){
         neededItems = neededItems.filter((neededItem) => neededItem !== item);
@@ -50,14 +48,13 @@ export default function RSVP() {
 
     return (
         <>
-         { showSubmitMessage &&
-            <p className="text-[0c1b39] block flex justify-center text-m mt-8 -mb-10">{submitMessage}</p>
+        <div className="RSVP rounded-xl my-12 mx-10 bg-cover bg-bottom flex items-center">
+            <div className="w-3/5 justify-center items-center flex">
+            { showSubmitMessage &&
+            <p className="text-[0c1b39] text-center text-m mt-8 -mb-10 mx-10 bg-[#f6eee0] rounded-xl p-10">{submitMessage}</p>
             }
-        <div className="RSVP rounded-xl flex my-12 py-12">
-            <div className="flex-shrink-0 h-300 w-300">
-                <Image src="/bar2.png" alt="sketch of bottles sitting on shelves" height="300" width="400" />
             </div>
-            <form onSubmit={handleSubmit} className="space-y-4 p-12 rounded-xl">
+            <form onSubmit={handleSubmit} className="space-y-4 p-12 rounded-r-xl w-2/5">
                 <div>
                     <label htmlFor="name" className="block text-sm font-medium">Your Name</label>
                     <input
