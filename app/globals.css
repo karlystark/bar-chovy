@@ -148,7 +148,7 @@ h3 {
 }
 
 
-.gallery-image, .RSVP form, .album-title, .About, .Menu, .nav-header{
+.gallery-image, .RSVP form, .About, .Menu, .nav-header{
   animation: fadeIn 1s ease-in-out;
 }
 

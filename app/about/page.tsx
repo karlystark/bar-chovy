@@ -4,9 +4,10 @@ import Image from "next/image";
 export default function About() {
 
     return (
+        <>
+        <p className="bg-[#5d7633] text-[#c7b29f] self-start py-3 px-3 inline-block flex justify-center mt-8 text-xl album-title"> a consistent, monthly dinner party for friends (+ friends of friends).</p>
         <div className="About mx-auto pt-10 p-20">
             <div className="flex flex-col">
-                <div className="text-3xl text-center my-10 text-[#0c1b38]">a consistent, monthly dinner party for friends (+ friends of friends).</div>
                 <div className="flex">
                 <div className="image-container overflow-hidden rounded-xl">
                     <Image src="/346.jpg" className="image-expand" alt="duplex and red truck with ivy" height="700" width="800"/>
@@ -30,5 +31,6 @@ export default function About() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

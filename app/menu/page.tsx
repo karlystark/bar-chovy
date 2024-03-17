@@ -27,14 +27,14 @@ export default function Menu (){
     ]
 
     return (
-        <div className="Menu mt-8">
-            <p className="inline-block bg-[#fcf1e9] rounded-xl p-4 ml-4 text-base">02.02.2024</p>
-        <div className="flex flex-wrap justify-center">
+        <>
+            <p className="bg-[#5d7633] text-[#c7b29f] self-start py-2 px-3 inline-block flex justify-center mt-8 album-title"> Menu 02.02.2024</p>
+        <div className="flex flex-wrap justify-center Menu">
             {
                 menu.map((item, idx) => <MenuCard data={item} key={idx}/>)
             }
         </div>
-        </div>
+        </>
 
     );
 }
