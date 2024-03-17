@@ -29,7 +29,7 @@ export default function RSVP() {
         e.preventDefault();
         const formData = { name, friendName, item, date};
         console.log(formData);
-        setSubmitMessage(name ? `Thanks for RSVPing ${name}! See you on ${date}!` : '');
+        setSubmitMessage(name ? `See you on ${date}, ${name}!` : '');
         setShowSubmitMessage(true);
         setName("");
         setFriendName("");
@@ -48,7 +48,7 @@ export default function RSVP() {
 
     return (
         <>
-        <div className="RSVP rounded-xl my-12 mx-10 bg-cover bg-bottom flex items-center">
+        <div className="RSVP rounded-xl my-12 mx-10 bg-cover bg-top flex items-center">
             <div className="w-3/5 justify-center items-center flex">
             { showSubmitMessage &&
             <p className="text-[0c1b39] text-center text-m mt-8 -mb-10 mx-10 bg-[#f6eee0] rounded-xl p-10">{submitMessage}</p>

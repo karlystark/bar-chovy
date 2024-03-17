@@ -20,12 +20,12 @@ export default function Gallery() {
         {
             url: "/backyard.jpg",
             alt: "friends hang out in the backyard sun",
-            date: "01/02/24"
+            date: "02/02/24"
         },
         {
             url: "/beets.jpg",
             alt: "crackers with beets and cheese on a metal tray",
-            date: "01/02/24"
+            date: "02/02/24"
         },
         {
             url: "/hug.jpg",
@@ -42,6 +42,61 @@ export default function Gallery() {
             alt: "a tray of tomatoes on toast",
             date: "02/02/24"
         },
+        {
+            url: "/1.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/2.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/3.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/4.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/5.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/6.jpeg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/7.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/8.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/9.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/10.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        },
+        {
+            url: "/11.jpg",
+            alt: "a tray of tomatoes on toast",
+            date: "12/02/24"
+        }
     ];
 
     const [isAlbumOpen, setIsAlbumOpen] = useState<boolean>(false);
@@ -66,7 +121,7 @@ export default function Gallery() {
         <>
             {isAlbumOpen ?
             <>
-                <button onClick={() => setIsAlbumOpen(false)} className="absolute z-10 rounded-xl self-start px-3 mx-10">
+                <button onClick={() => setIsAlbumOpen(false)} className="absolute z-10 rounded-xl self-start px-3 mx-10 py-4">
                     <Image src="/back.png" alt="back arrow" className="inline-block" width="60" height="60"/>
                 </button>
                 <p className="bg-[#5d7633] text-[#c7b29f] self-start py-2 px-3 mt-8 inline-block flex justify-center album-title">{selectedAlbum}</p>
