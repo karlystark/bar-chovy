@@ -5,7 +5,7 @@ export default function About() {
 
     return (
         <>
-        <p className="bg-[#5d7633] text-[#c7b29f] self-start py-3 px-3 inline-block flex justify-center mt-8 text-xl album-title"> a consistent, monthly dinner party for friends (+ friends of friends).</p>
+        <p className="bg-[#5d7633] text-[#c7b29f] self-start py-3 px-3 inline-block flex justify-center mt-8 text-xl album-title"> a consistent, monthly dinner party for friends (+ friends of friends)</p>
         <div className="About mx-auto pt-10 p-20">
             <div className="flex flex-col">
                 <div className="flex">

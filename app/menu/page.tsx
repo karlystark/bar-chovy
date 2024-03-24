@@ -29,7 +29,7 @@ export default function Menu (){
     return (
         <>
             <p className="bg-[#5d7633] text-[#c7b29f] self-start py-2 px-3 inline-block flex justify-center mt-8 album-title"> Menu 02.02.2024</p>
-        <div className="flex flex-wrap justify-center Menu">
+        <div className="flex flex-wrap justify-center Menu mt-10">
             {
                 menu.map((item, idx) => <MenuCard data={item} key={idx}/>)
             }
